@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Potenza - Job Application Form Wizard with Resume upload and Branch feature">
+    <meta name="author" content="Ansonika">
+    <title>Potenza | Job Application Form Wizard by Ansonika</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="swirch.css" rel="stylesheet">
+	<link href="EE1.css" rel="stylesheet">
+	<link href="EE2.css" rel="stylesheet">
+	<link href="EE3.css" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- MODERNIZR MENU -->
+	<script src="js/modernizr.js"></script>
+    
+    <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+    
+</head>
+
+<body>
+	
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div><!-- /Preload -->
+	
+	<div id="loader_form">
+		<div data-loader="circle-side-2"></div>
+	</div><!-- /loader_form -->
+	
+	<header>
+		<div class="container-fluid">
+		    <div class="row">
+                <div class="col-3">
+                    <a href="index.html"><img src="img/logo_in.png" alt="" width="45" height="45"></a>
+                </div>
+                <div class="col-9 position-relative">
+                    <div id="social">
+                        <ul>
+                            <li><a href="#0"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#0"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#0"><i class="icon-google"></i></a></li>
+                            <li><a href="#0"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /social -->
+					<a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+					<!-- /menu button -->
+                    <nav>
+		<ul class="cd-primary-nav">
+			<li><a href="index.html" class="animated_link">Company Details</a></li>
+			<li><a href="index-2.html" class="animated_link">Address</a></li>
+			<li><a href="index-3.html" class="animated_link">Contacts</a></li>
+			<li><a href="index-4.html" class="animated_link">Payroll</a></li>
+			<li><a href="about.html" class="animated_link">Employee Eligibility</a></li>
+			<li><a href="contacts.html" class="animated_link">CUSTOMER BENEFIT OPEN ENROLLMENT MANAGEMENT</a></li>
+			<li><a href="#0" class="animated_link">COBRA OPEN ENROLLMENT MANAGEMENT</a></li>
+		</ul>
+	</nav>
+					<!-- /menu -->
+                </div>
+            </div>
+		</div>
+		<!-- /container -->
+	</header>
+	<!-- /Header -->
+<div>
+    <form>
+    <h2>EMPLOYEE ELIGIBILITY</h2>
+    <i class="dropicons dripicons-information"></i>
+    <br>
+    <input placeholder="NO OF ELIGIBLE EMPLOYEES" style="margin:5px;">
+    <label style="margin:5px;">Is consumer benefit plan eligibility the same as the company sponsored medical plan eligibility? </label>
+     <i class="dropicons dripicons-information"></i>
+     <label class="switch" style="margin:5px;">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+<br>
+<select style="margin:5px;">
+    <option>Benifit Plan</option>
+    <option>FSA</option>
+    <option>BSA</option>
+    <option>HRA</option>
+    <option>HSA</option>
+    <option>Other</option>
+</select>
+<input placeholder="Employee Group" style="margin:5px;">
+
+<select style="margin:5px;">
+    <option>Employee Definition</option>
+    <option>Date of Hire</option>
+    <option>First Day Of Month Following Hire</option>
+    <option>Last Day Of Month Following Hire</option>
+    <option>First Day Of Month Following Hire 30 days</option>
+    <option>First Day Of Month Following Hire 60 days</option>
+    <option>Other</option>
+</select>
+
+                            <input type="button" value="x DELETE" style="background-color:blue;font-color:white;margin:5px;height:30px;width:100px">
+                             <input type="button" value="ADD" style="background-color:green;font-color:white;margin:5px;height:30px;width:100px">
+                            
+    
+    
+
+<br>
+  <button style="background-color:blue;padding:5px;height:30px;width:80px;margin-left:850px;"> <a href="CustomerBenefit.html" target="blank">    Next </a></button>
+  </form>
+  </div>
+</body>
+</html>
